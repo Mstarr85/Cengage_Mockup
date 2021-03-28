@@ -1,0 +1,17 @@
+/*header*/
+
+.grid-header{
+    display:grid;
+    grid-template-columns: 100%;
+    height: 20%;
+    position: sticky;
+}
+
+#banner{
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background: transparent no-repeat center;
+    position: relative;
+}
+
