@@ -1,5 +1,4 @@
 /*header*/
-
 .grid-header{
     display:grid;
     grid-template-columns: 100%;
@@ -35,7 +34,12 @@
     top: 50px; 
 
 }
+/*gale directory search box*/
+div.grid-search{
+    border: solid; 
+    width: 560px;
 
+}
 
 body{
     margin: 0;
@@ -48,4 +52,5 @@ html{
     overflow: auto;
     
 }
+
 
