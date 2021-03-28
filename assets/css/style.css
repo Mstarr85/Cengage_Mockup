@@ -14,6 +14,12 @@
     background: transparent no-repeat center;
     position: relative;
 }
+#badge{
+    width: 189px;
+    height: 60px;
+    position: absolute;
+
+}
 
 body{
     margin: 0;
