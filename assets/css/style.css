@@ -21,6 +21,22 @@
 
 }
 
+#branding{
+    border-style: solid;
+    border-color: darkgrey;
+    border-width: .1px;
+    border-radius: 5px 5px 5px 5px;
+    background-color: white;
+    padding: 5px 5px 5px 5px;
+    width: 150px;
+    height: 80px;
+    position: absolute;
+    left: 1717px;
+    top: 50px; 
+
+}
+
+
 body{
     margin: 0;
     overflow: auto;
@@ -32,3 +48,4 @@ html{
     overflow: auto;
     
 }
+
