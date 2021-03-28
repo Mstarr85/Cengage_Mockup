@@ -31,7 +31,7 @@
     height: 80px;
     position: absolute;
     left: 1717px;
-    top: 50px; 
+    top: 40px; 
 
 }
 /*gale directory search box*/
@@ -49,8 +49,8 @@ div.grid-search{
 } */
 
 .search p{
-    margin-top: 10px;
-   font-size: 15px;
+   margin-top: 10px;
+   font-size: 12px;
    margin-bottom: 10px;
    font-weight: bolder;
    /* font-size: 32px; */
@@ -60,6 +60,7 @@ div.grid-search{
 
 #gale-dir {
     font-size: 32px;
+    margin-bottom: 20px;
 }
 
 
