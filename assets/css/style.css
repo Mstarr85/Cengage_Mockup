@@ -36,10 +36,70 @@
 }
 /*gale directory search box*/
 div.grid-search{
-    border: solid; 
+   
     width: 560px;
+    color: white;
+    position: absolute;
+    left: 33px;
+    top: 70px;
+}
+/* .grid-search p{
+    margin-bottom: 10px;
+    font-size: 80px;
+} */
+
+.search p{
+    margin-top: 10px;
+   font-size: 15px;
+   margin-bottom: 10px;
+   font-weight: bolder;
+   /* font-size: 32px; */
+    
+    
+}
+
+#gale-dir {
+    font-size: 32px;
+}
+
+
+.button-header{
+    line-height: 30px;
+    float: left;
+    border-radius: 4% 0% 0% 4%;
+    border: hidden;
+    
+    
+}
+
+input.searchTerm{
+    line-height: 30px;
+    padding-left: 6px;
+    margin: none;
+    float: left;
+    border: hidden;
+    border-radius: 0px 4px 4px 0px;
+    width: 380px;
+}
+
+i.fas.fa-caret-down::before{
+    color:dimgray;
+    margin-left: 3px;
+    
 
 }
+
+i.fa.fa-search{
+
+    margin-top: 6px;
+    margin-left: -25px;
+    color: #000000;
+    
+    
+}
+
+
+
 
 body{
     font-family: 'Open Sans', sans-serif;
