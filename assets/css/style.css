@@ -3,13 +3,15 @@ html{
     overflow: auto;
 }
 
+main{
+    background-color: rgb(241, 242, 243);
+}
+
 body{
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     overflow: auto;
     height: 100%;
-
-
 }
 
 /*header*/
@@ -103,10 +105,14 @@ i.fa.fa-search{
 /*navbar*/
 .navbar{
     border-bottom: solid lightgrey 2px;
-    height: 50px;
-    box-shadow: 2px 2px 2px lightgrey;
+    height: 50px; 
+    /*box-shadow: 2px 2px 2px lightgrey; */
+    box-shadow: 1px 8px  rgb(203, 204, 205);
+
+
     display:grid;
     grid-template-columns: 1fr 1fr;
+    background-color:rgb(254, 255, 255);
     
     
 }
@@ -145,12 +151,14 @@ i.fa.fa-search{
     grid-auto-rows: minmax(250px, auto);
     grid-auto-columns: minmax(700px, auto);
    
+   
 }
 
 .card div {
 
-    background: gray;
+    background-color:rgb(254, 255, 255);
     padding: 1em;
+    
     
 
 }
@@ -164,11 +172,19 @@ i.fa.fa-search{
 
     display:grid;
     grid-template-columns: 25% 75%;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(244, 245, 245);
+    border-radius: 5px;
+    box-shadow: 1px 2px 7px  rgb(203, 204, 205);
+    
+    
 }
 
 .book-grid-1.input.searchTerm {
     grid-template-columns: 2;
-    /* grid-template-rows: 4, 1fr; */
+   
+   
 }
 
 .right-nested div{
@@ -198,24 +214,11 @@ div.description{
     padding: 8px 80px 15px 0px;
 }
 
-.searchbox {
-
-   height: 32px;
-   line-height: 30px;
-    padding-left: 6px;
-    margin: none;
-    float: right;
-    border: hidden;
-    border-radius: 2px;
-    width: 380px;
-
-}
 
 i#magnify.fa.fa-search::before{
 
  
     
-    position: absolute;
     left: 590px;
     top: 605px;
 }
@@ -225,25 +228,25 @@ i#magnify.fa.fa-search::before{
     height:auto;
 }
 
-/* .search-icon{
-    
-    
-    display:inline-block;
-    border: solid;
-    padding-left: 380px;
-    padding-top: 20px;
-} */
-
 .search{
 
     grid-template-columns: 1fr 1fr;
+   
+    
 }
 
 #book-search-box{
-
-    border-radius: 2px;
+    border-color: red;
+    border-radius: 3px;
     width: 500px;
+    border: solid; 
+    border-width: 1px;
 }
+
+
+
+
+
 
 
 
