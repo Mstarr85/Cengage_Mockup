@@ -9,6 +9,7 @@ body{
     overflow: auto;
     height: 100%;
 
+
 }
 
 /*header*/
@@ -137,10 +138,12 @@ i.fa.fa-search{
 .card{
 
     display:grid;
-    grid-template-columns: 50% 50%;
-    padding: 6em;
+    grid-template-columns: 1fr 1fr;
+    padding: 3em;
     justify-content: space-between;
     grid-gap: 1.5em;
+    grid-auto-rows: minmax(250px, auto);
+    grid-auto-columns: minmax(700px, auto);
    
 }
 
@@ -150,6 +153,96 @@ i.fa.fa-search{
     padding: 1em;
     
 
+}
+
+.book-1 img{
+
+    height: 168;
+}
+
+.book-grid-1{
+
+    display:grid;
+    grid-template-columns: 25% 75%;
+}
+
+.book-grid-1.input.searchTerm {
+    grid-template-columns: 2;
+    /* grid-template-rows: 4, 1fr; */
+}
+
+.right-nested div{
+    display:grid; 
+    grid-template-rows: 4 1fr;
+    padding: 0px 0px 0px 0px; 
+    margin: 0px 0px 0px 0px;
+
+}
+
+div.title {
+    color:orangered;
+    font-weight: bolder;
+    margin: 0px 0px 0px 0px;
+    padding-bottom: 10px;
+    
+}
+
+div.year {
+    font-size: 12px;
+    font-style: italic;
+    padding-bottom: 15px;
+}
+
+div.description{
+    font-size: 14px;
+    padding: 8px 80px 15px 0px;
+}
+
+.searchbox {
+
+   height: 32px;
+   line-height: 30px;
+    padding-left: 6px;
+    margin: none;
+    float: right;
+    border: hidden;
+    border-radius: 2px;
+    width: 380px;
+
+}
+
+i#magnify.fa.fa-search::before{
+
+ 
+    
+    position: absolute;
+    left: 590px;
+    top: 605px;
+}
+
+#book-1{
+
+    height:auto;
+}
+
+/* .search-icon{
+    
+    
+    display:inline-block;
+    border: solid;
+    padding-left: 380px;
+    padding-top: 20px;
+} */
+
+.search{
+
+    grid-template-columns: 1fr 1fr;
+}
+
+#book-search-box{
+
+    border-radius: 2px;
+    width: 500px;
 }
 
 
