@@ -17,7 +17,7 @@ body{
 /*header*/
 .grid-header{
     display:grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr ;
     height: 20%;
     position: sticky;
 }
@@ -34,7 +34,6 @@ body{
     height: 60px;
     position: absolute;
     
-
 }
 
 #branding{
@@ -42,6 +41,7 @@ body{
     border-color: darkgrey;
     border-width: .1px;
     border-radius: 5px 5px 5px 5px;
+    padding: auto;
     background-color: white;
     padding: 5px 5px 5px 5px;
     width: 150px;
@@ -53,7 +53,6 @@ body{
 
 /*gale directory search box*/
 div.grid-search{
-   
     width: 560px;
     color: white;
     position: absolute;
@@ -93,8 +92,6 @@ input.searchTerm{
 i.fas.fa-caret-down::before{
     color:dimgray;
     margin-left: 3px;
-    
-
 }
 
 i.fa.fa-search{
@@ -107,16 +104,12 @@ i.fa.fa-search{
 .navbar{
     border-bottom: solid lightgrey 2px;
     height: 50px; 
-    /*box-shadow: 2px 2px 2px lightgrey; */
     box-shadow: 1px 8px  rgb(203, 204, 205);
-
-
     display:grid;
     grid-template-columns: 1fr 1fr;
     background-color:rgb(254, 255, 255);
-    
-    
 }
+
 .icons{
     display: flex;
     height: 20px;
@@ -135,33 +128,24 @@ i.fa.fa-search{
     height: 30px;
     padding-right: 30px;
 } 
+
 .icons-description p{
     margin: 0px 0px 0px 0px;
     padding-right: 10px;
 }
 
 /*book cards*/
-
 .card{
-
     display:grid;
     grid-template-columns: 1fr 1fr;
     padding: 3em;
     justify-content: space-between;
     grid-gap: 1.5em;
-    grid-auto-rows: minmax(250px, auto);
-    grid-auto-columns: minmax(700px, auto);
-   
-   
 }
 
 .card div {
-
     background-color:rgb(254, 255, 255);
     padding: 1em;
-    
-    
-
 }
 
 .book-1 img{
@@ -179,13 +163,10 @@ i.fa.fa-search{
     border-radius: 5px;
     box-shadow: 1px 2px 7px  rgb(203, 204, 205);
     
-    
 }
 
 .book-grid-1.input.searchTerm {
     grid-template-columns: 2;
-   
-   
 }
 
 .right-nested div{
@@ -211,29 +192,21 @@ div.year {
 }
 
 div.description{
-    font-size: 14px;
+    font-size: 13px;
     padding: 8px 80px 15px 0px;
 }
 
-
 i#magnify.fa.fa-search::before{
-
- 
-    
     left: 590px;
     top: 605px;
 }
 
 #book-1{
-
     height:auto;
 }
 
 .search{
-
     grid-template-columns: 1fr 1fr;
-   
-    
 }
 
 #book-search-box{
@@ -244,15 +217,10 @@ i#magnify.fa.fa-search::before{
     border-width: 1px;
 }
 
-
-
 /*browse topics*/
-
 .browse{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    /* grid-template-rows: 1fr 1fr 1fr 1fr; */
-    /* padding: 3em; */
     padding: 0em 3em 2em 3em;
     justify-content: space-between;
     grid-gap: 1.5em;
@@ -264,7 +232,6 @@ i#magnify.fa.fa-search::before{
 .browse-grid{
     display:grid;
     grid-template-columns: 100%;
-    /* border: solid; */
 }
 
 .reg-button{
@@ -300,11 +267,9 @@ i#magnify.fa.fa-search::before{
     border-radius: 4px;
 }
 
-
-
 #topics {
     color:rgb(10, 79, 139);
-    font-size: 14px;
+    font-size: 13px;
     display: inline-block;
 }
 
@@ -315,42 +280,19 @@ i.fas.fa-angle-double-right::before{
     width: 2px;
 }
 
-
-
-.buttons{
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
 #underline{
-    height: 2px;
+    height: 4px;
     width: 65px;
     background-color: rgb(204, 0, 5);
 }
 
 #button-row-1{
     display: inline-block;
-  
-    
 }
 
 #button-row-2{
     display: inline-block;
 }
-
-
-
-
 
 hr{
     background-color: rgb(254, 255, 255);
@@ -359,10 +301,7 @@ hr{
     border: none;
 }
 
-
-
 /*footer*/
-
 footer{
     padding-top: 10px;
     width: 100%;
@@ -378,15 +317,11 @@ footer{
     float: left;
     padding: 0px 0px 0px 30px;
     margin: none;
-  
-
 }
 
 .nav {
     padding-top: none;
     text-align: center;
-   
-    
 }
 
 .nav-buttons {
@@ -395,19 +330,47 @@ footer{
     font-weight: bold;
     color: rgb(10, 79, 139);
     display: inline-block;
-    
 
-  }
+}
 
 .tag-line{
     width: auto; 
     height: 30px;
     float: right;
     padding: 0px 20px 0px 0px;
-  
- 
-   
 }
+
+/*Media queries to make responsive at smaller screen sizes @ 1920, 1440 and 900*/
+@media screen and (max-width: 1440px) {
+    .card {
+        grid-template-columns: 1fr;
+    }
+  }
+
+@media screen and (max-width: 1440px) {
+    .browse {
+        grid-template-columns: 1fr;
+    }
+  }
+@media screen and (max-width: 1440px){
+    #branding {
+        position: absolute;
+        left: 1237px;
+      }
+}
+
+@media screen and (max-width: 900px){
+    #branding {
+        position: absolute;
+        left: 697px;
+      }
+}
+
+
+
+
+
+
 
 
 
